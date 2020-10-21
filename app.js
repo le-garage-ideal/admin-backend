@@ -9,13 +9,11 @@ const jwt = require('express-jwt');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const { jwtSecret } = require('./passwords');
+const { jwtSecret } = require('./config');
 const { brandsRouter } = require('./routes/brands.route');
 const { modelsRouter } = require('./routes/models.route');
 const { carsRouter } = require('./routes/cars.route');
 const { loginRouter } = require('./routes/login.route');
-const { dirname } = require('path');
-const { fileURLToPath } = require('url');
 const { connectToMongoDb } = require('./mongodb/mongodb.datasource');
 
 connectToMongoDb(mongoose);

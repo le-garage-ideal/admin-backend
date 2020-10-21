@@ -1,6 +1,6 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const { jwtSecret, backendUsers } = require('../passwords');
+const { jwtSecret, backendUsers } = require('../config');
 
 const loginRouter = express.Router();
 loginRouter.post('', (req, res) => {

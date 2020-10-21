@@ -1,4 +1,4 @@
-const { mongodb } = require('../passwords');
+const { mongodb } = require('../config');
 
 const connectToMongoDb = async (mongoose) => {
 
