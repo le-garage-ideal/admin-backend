@@ -2,7 +2,7 @@
 
 API to manage perfect garage Mongodb database.
 
-Written with NodeJS + Express + Mongoose.
+Written with NodeJS + JWT + Express + Mongoose.
 
 Requires admin-frontend webapp.
 
@@ -16,3 +16,5 @@ npm install
 ```
 npm run start
 ```
+Login: demo
+Password: demo
