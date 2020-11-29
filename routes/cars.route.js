@@ -27,6 +27,7 @@ carsRouter.post('', (req, res) => {
     car.save().then(result => res.json(result));
   }
 });
+
 carsRouter.put('', (req, res) => {
     if (!req.body.carId || !req.body.variant || (!req.body.url && !req.body.selectedFavcarsUrl)) {
       res.status(400).send('Bad parameters');
